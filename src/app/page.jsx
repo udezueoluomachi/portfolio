@@ -39,7 +39,7 @@ const Home = () => {
 
   useEffect(() => {
     document.title = "Home - Udezue Oluomachi Chimaobi";
-  },[])
+  })
 
   return (
     <>
