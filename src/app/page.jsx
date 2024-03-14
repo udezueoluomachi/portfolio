@@ -1,5 +1,5 @@
 "use client";
-import Image from 'next/image'
+import Image  from 'next/image'
 import {useEffect, useState, useRef} from "react";
 import Link from 'next/link'
 import "animate.css"
@@ -34,7 +34,7 @@ const Home = () => {
     }, 100);
 
     return () => clearInterval(interval);
-  }, [wordIndex, charIndex]);
+  }, [wordIndex, charIndex, text , wordsArray]);
   
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const Home = () => {
       <div className="w-full px-3 md:px-10 h-5/6 overflow-y-auto scroll-smooth" ref={scrollElem}>
         <div className="animate-onscroll-trigger flex items-center flex-col w-full p-10 h-full">
             <div className="w-[150px] h-[150px] md:w-[200px] md:h-[200px]">
-                <Image src={Photo} animation-settings="animate__fadeIn animate_slow animate__delay-1s" className="animate__onscroll object-cover rounded-full w-full h-full" />
+                <Image alt="image" src={Photo} animation-settings="animate__fadeIn animate_slow animate__delay-1s" className="animate__onscroll object-cover rounded-full w-full h-full" />
             </div>
             <div className="mt-4 md:mt-8">
                 <p animation-settings="animate__slideInDown" className="animate__onscroll text-green text-xl md:text-2xl font-medium text-center">
@@ -116,7 +116,7 @@ const Home = () => {
             </div>
             <div className="text-white mt-10 md:mt-16">
                 <p className="text-center text-base animate__onscroll" animation-settings="animate__fadeIn animate__delay-1s">
-                I'm always looking for new challenges and opportunities to learn and grow as a programmer.<br />I'm interested in new opportunities and offers that'll help my career.
+                I'm always looking for new challenges and opportunities to learn and grow as a programmer.<br />I'm interested in new opportunities and offers that'll help my career.&apos;
                 </p>
             </div>
             <div className="flex justify-center items-center flex-col sm:flex-row h-min w-11/12 mt-10 md:mt-16 text-base font-medium">

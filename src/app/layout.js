@@ -25,7 +25,6 @@ export default function RootLayout({ children }) {
         <html lang="en" className="select-none box-border">
         <body className="bg-black-800 w-screen h-screen font-jetBrains overflow-x-hidden">
             <div id="root" className="h-full w-full">{children}</div>
-            <script type="module" src="/src/main.jsx"></script>
         </body>
         </html>
         </>
