@@ -48,7 +48,7 @@ const Home = () => {
       <div className="w-full px-3 md:px-10 h-5/6 overflow-y-auto scroll-smooth" ref={scrollElem}>
         <div className="animate-onscroll-trigger flex items-center flex-col w-full p-10 h-full">
             <div className="w-[150px] h-[150px] md:w-[200px] md:h-[200px]">
-                <Image alt="image" src={Photo} animation-settings="animate__fadeIn animate_slow animate__delay-1s" className="animate__onscroll object-cover rounded-full w-full h-full" />
+                <Image draggable="false" alt="image" src={Photo} animation-settings="animate__fadeIn animate_slow animate__delay-1s" className="animate__onscroll object-cover rounded-full w-full h-full" />
             </div>
             <div className="mt-4 md:mt-8">
                 <p animation-settings="animate__slideInDown" className="animate__onscroll text-green text-xl md:text-2xl font-medium text-center">
