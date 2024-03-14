@@ -52,7 +52,7 @@ const useAnimationOnScroll = (scrollRef) => {
         animationTriggers.forEach(trigger => {
             observer.observe(trigger)
         })
-    }, [])
+    }, [scrollRef])
 }
 
 export default useAnimationOnScroll;

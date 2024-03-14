@@ -34,7 +34,7 @@ const FixedInfo = ({scrollRef}) => {
                 show()
             }
         })
-    },[])
+    },[scrollRef])
     return (
         <>
             <div className="hidden md:block text-xl fixed bottom-10 left-10 text-white">
