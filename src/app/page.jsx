@@ -34,7 +34,7 @@ const Home = () => {
     }, 100);
 
     return () => clearInterval(interval);
-  }, [wordIndex, charIndex, text , wordsArray]);
+  }, [wordIndex, charIndex]);
   
 
   useEffect(() => {
@@ -116,7 +116,7 @@ const Home = () => {
             </div>
             <div className="text-white mt-10 md:mt-16">
                 <p className="text-center text-base animate__onscroll" animation-settings="animate__fadeIn animate__delay-1s">
-                I'm always looking for new challenges and opportunities to learn and grow as a programmer.<br />I'm interested in new opportunities and offers that'll help my career.&apos;
+                I&#39;m always looking for new challenges and opportunities to learn and grow as a programmer.<br />I&#39;m interested in new opportunities and offers that&#39;ll help my career.
                 </p>
             </div>
             <div className="flex justify-center items-center flex-col sm:flex-row h-min w-11/12 mt-10 md:mt-16 text-base font-medium">

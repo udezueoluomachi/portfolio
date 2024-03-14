@@ -49,7 +49,7 @@ const Skills = () => {
                   WEB DEVELOPMENT
                 </p>
                 <p className="text-white font-normal text-base mt-[51px] mx-auto">
-                  I'm highly talented in building amazing and user-friendly websites for businesses, people and more. I believe websites are the interface of the internet.&apos;
+                  I&#39;m highly talented in building amazing and user-friendly websites for businesses, people and more. I believe websites are the interface of the internet.
                 </p>
               </div>
               <div className="w-full text-center p-3 md:p-5 min-h-[320px] max-h-[400px]">
