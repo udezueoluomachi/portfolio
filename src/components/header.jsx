@@ -57,7 +57,7 @@ const Header = ({activePage}) => {
                         <FontAwesomeIcon icon="envelope" />
                     </a>
                 </div>
-                <button onClick={toggleMenu} className="menu-toggler cursor-none lg:cursor-pointer lg:hidden text-green hover:text-green/70 text-lg">
+                <button onClick={toggleMenu} className="menu-toggler lg:hidden text-green hover:text-green/70 text-lg">
                     <FontAwesomeIcon icon="bars" />
                 </button>
             </header>

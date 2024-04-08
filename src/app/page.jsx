@@ -120,10 +120,10 @@ const Home = () => {
                 </p>
             </div>
             <div className="flex justify-center items-center flex-col sm:flex-row h-min w-11/12 mt-10 md:mt-16 text-base font-medium">
-                <Link href="/works" className="animate__onscroll hover:opacity-80 md:cursor-pointer cursor-none flex justify-center items-center bg-green h-12 w-48 md:h-16 md:w-72 mx-4 mb-5 text-black-800" animation-settings="animate__slideInRight" >
+                <Link href="/works" className="animate__onscroll hover:opacity-80 flex justify-center items-center bg-green h-12 w-48 md:h-16 md:w-72 mx-4 mb-5 text-black-800" animation-settings="animate__slideInRight" >
                     SEE MY WORKS
                 </Link>
-                <a href="mailto:basilchimaobi2@gmail.com" className="animate__onscroll hover:opacity-80 md:cursor-pointer cursor-none flex justify-center items-center h-12 w-48 md:h-16 md:w-72 border-2 border-green mx-4 mb-5 text-green" animation-settings="animate__slideInLeft" >
+                <a href="mailto:basilchimaobi2@gmail.com" className="animate__onscroll hover:opacity-80 flex justify-center items-center h-12 w-48 md:h-16 md:w-72 border-2 border-green mx-4 mb-5 text-green" animation-settings="animate__slideInLeft" >
                     HIRE ME
                 </a>
             </div>

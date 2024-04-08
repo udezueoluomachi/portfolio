@@ -24,10 +24,10 @@ const ProjectContainer = ({title , description, image, repo, demo, icon}) => {
                     </p>
                 </div>
                 <div className="flex justify-between mt-10 text-green text-xl">
-                    <a href={repo} target="_blank" className="cursor-none md:cursor-pointer hover:text-off-white" >
+                    <a href={repo} target="_blank" className="hover:text-off-white" >
                         <FontAwesomeIcon icon={["fab", icon == "figma" ? "figma" : "github"]} />
                     </a>
-                    <a href={demo} target="_blank" className="cursor-none md:cursor-pointer hover:text-off-white" >
+                    <a href={demo} target="_blank" className="hover:text-off-white" >
                         VIEW DEMO
                         <FontAwesomeIcon icon="arrow-right" className="ml-2" />
                     </a>

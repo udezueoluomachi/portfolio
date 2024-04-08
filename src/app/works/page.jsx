@@ -59,7 +59,7 @@ const Work = () => {
 
               <ProjectContainer image={labourSearch} title="Labour Search" description="A platform which people can use to find labour services close to them" />
 
-              <ProjectContainer image={stackion} title="Stackion" repo="https://github.com/stackion" demo="https://drive.google.com/file/d/1zYq4J6zYs3CFhB8JUcs1ru_HgDapZ-Hq/view?usp=sharing" description="A cross-platform mobile application which enables users to transfer money with / without an internet connection" />
+              <ProjectContainer image={stackion} title="Stackion" repo="https://drive.google.com/file/d/1zYq4J6zYs3CFhB8JUcs1ru_HgDapZ-Hq/view?usp=sharing" demo="https://youtu.be/hOnJ6fwJmfY?si=7Rkl9OTm_DKiRmSL" description="A cross-platform mobile application which enables users to transfer money with / without an internet connection" />
 
               <ProjectContainer image={nosqljsondb} title="Nosql-json-DB" repo="https://github.com/udezueoluomachi/nosql-json-db" description="A nodejs framework which gives it users the ablility to use JSON files as databases 'CRUD'" />
 
