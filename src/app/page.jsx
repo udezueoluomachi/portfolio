@@ -35,11 +35,6 @@ const Home = () => {
 
     return () => clearInterval(interval);
   }, [wordIndex, charIndex]);
-  
-
-  useEffect(() => {
-    document.title = "Home - Udezue Oluomachi Chimaobi";
-  })
 
   return (
     <>
