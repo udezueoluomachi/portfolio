@@ -7,7 +7,7 @@ import './globals.css'
 library.add(fab, faArrowRight, faArrowDown, faChevronDown, faLaptopCode, faDatabase, faMobileAlt, faChartPie, faShapes, faHeadSideVirus, faEnvelope, faBars)
 
 export const metadata = {
- title : "Home - Udezue Oluomachi Chimaobi",
+ title : "Dream - Udezue Oluomachi Chimaobi",
  description : "Udezue Oluomachi Chimaobi , A Full Stack Developer & Designer driven by innovation.",
  metadataBase : "https://dream-dev.vercel.app"
 }
