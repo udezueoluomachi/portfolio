@@ -11,7 +11,7 @@ library.add(fab, faArrowRight)
 const ProjectContainer = ({title , description, image, repo, demo, icon}) => {
     return (
         <>
-            <div className="bg-black-700 flex flex-col justify-between h-[70vh] max-h-[500px] min-h-[400px] w-full min-w-[290px] max-w-[310px] p-4">
+            <div className="bg-black-800 flex flex-col justify-between h-[70vh] max-h-[500px] min-h-[400px] w-full min-w-[290px] max-w-[310px] p-4">
                 <div className="w-full h-max">
                     <div className="w-full h-44">
                         <Image alt="image"  src={image} className="object-contain w-full h-full" />
@@ -41,7 +41,7 @@ const ProjectContainer = ({title , description, image, repo, demo, icon}) => {
 export const ProjectContainerLast = ({children}) => {
     return (
         <>
-            <div className="bg-black-700 flex items-center justify-center h-[70vh] max-h-[500px] min-h-[400px] w-full min-w-[290px] max-w-[310px] p-4">
+            <div className="bg-black-800 flex items-center justify-center h-[70vh] max-h-[500px] min-h-[400px] w-full min-w-[290px] max-w-[310px] p-4">
                 {children}
             </div>
         </>

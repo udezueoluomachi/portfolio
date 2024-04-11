@@ -21,6 +21,9 @@ export default {
       fontFamily : {
         "jetBrains" : ["JetBrainsMono"]
       },
+      backgroundImage : {
+        "overlay-bg" : "url('/overlay-bg.png')"
+      }
     },
   },
   plugins: [],

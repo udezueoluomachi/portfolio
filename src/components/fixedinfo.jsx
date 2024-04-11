@@ -53,7 +53,7 @@ const FixedInfo = ({scrollRef}) => {
                 <FontAwesomeIcon  icon="chevron-down" className="text-sm text-green/30" />
             </div>
             <div className="hidden md:block fixed bottom-10 right-10 text-white">
-                <p className="text-base">v0.0.5</p>
+                <p className="text-base">v0.0.6</p>
             </div>
         </>
     )

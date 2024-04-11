@@ -97,7 +97,7 @@ const Home = () => {
             </div>
             <div className="animate__onscroll mt-8 md:mt-14" animation-settings="animate__fadeInUpBig">
                 <p className="text-green text-2xl md:text-4xl font-bold text-center">
-                    A PASSION FOR INOVATION AND EXCELLENCE
+                    INOVATION AND EXCELLENCE
                 </p>
             </div>
         </div>
