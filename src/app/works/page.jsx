@@ -22,6 +22,7 @@ import losangelesmounts from "@/assets/images/losangelesmounts.png"
 import virtul from "@/assets/images/virtul.png"
 import giftedBrainiac from "@/assets/images/gifted-braniac.png"
 import amaboV2 from "@/assets/images/amabo-v2.png"
+import chattychin from "@/assets/images/chattychin.png"
 
 
 const Work = () => {
@@ -42,7 +43,8 @@ const Work = () => {
                 <TitleUnderline />
             </div>
             <div className="mt-8 md:mt-14 flex justify-center items-start flex-wrap gap-4 sm:p-4 h-max w-full">
-              <ProjectContainer image={amaboV2} title="Amabo Learn Remake" repo="https://github.com/udezueoluomachi/amabo-learn-v2" demo="https://amabo-learn-v2.vercel.app/" description="Remake of a project I made with a friend years ago. Now in Nextjs - React" />
+            <ProjectContainer image={chattychin} title="Chattychin" repo="https://github.com/udezueoluomachi/chattychin" demo="https://chattychin.vercel.app/" description="A live chatroom I made for talkign with my chinese friends." />
+            <ProjectContainer image={amaboV2} title="Amabo Learn Remake" repo="https://github.com/udezueoluomachi/amabo-learn-v2" demo="https://amabo-learn-v2.vercel.app/" description="Remake of a project I made with a friend years ago. Now in Nextjs - React" />
               <ProjectContainer image={giftedBrainiac} title="GIFTED BRAINAC API" repo="https://github.com/udezueoluomachi/gifted-braniac-backend" demo="https://gifted-braniac-backend.onrender.com" description="Backend server for a client's project. Project's deal was cut so it is mine now." />
 
               <ProjectContainer image={virtul} title="VIRTUL" repo="https://github.com/udezueoluomachi/virtul" demo="https://udezueoluomachi.github.io/virtul/" description="A virtual stock trading platform I built in 2022 formerly known as @stackion" />
