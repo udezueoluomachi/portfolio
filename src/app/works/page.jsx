@@ -23,6 +23,7 @@ import virtul from "@/assets/images/virtul.png"
 import giftedBrainiac from "@/assets/images/gifted-braniac.png"
 import amaboV2 from "@/assets/images/amabo-v2.png"
 import chattychin from "@/assets/images/chattychin.png"
+import notepad from "@/assets/images/notepad.png"
 
 
 const Work = () => {
@@ -43,6 +44,7 @@ const Work = () => {
                 <TitleUnderline />
             </div>
             <div className="mt-8 md:mt-14 flex justify-center items-start flex-wrap gap-4 sm:p-4 h-max w-full">
+            <ProjectContainer image={notepad} title="Notepad" repo="https://github.com/udezueoluomachi/notepad" demo="https://drive.google.com/file/d/1sDyIeLCF0AiVePxXImkCDfuyWrfvQmtf/view?usp=sharing" description="A Notepad application built with react native and implementing blockchain seedphrases for authentication. Notes are stored in the cloud and are synced across connected devices. APK linked works on android devices." />
             <ProjectContainer image={chattychin} title="Chattychin" repo="https://github.com/udezueoluomachi/chattychin" demo="https://chattychin.vercel.app/" description="A live chatroom I made for talkign with my chinese friends." />
             <ProjectContainer image={amaboV2} title="Amabo Learn Remake" repo="https://github.com/udezueoluomachi/amabo-learn-v2" demo="https://amabo-learn-v2.vercel.app/" description="Remake of a project I made with a friend years ago. Now in Nextjs - React" />
               <ProjectContainer image={giftedBrainiac} title="GIFTED BRAINAC API" repo="https://github.com/udezueoluomachi/gifted-braniac-backend" demo="https://gifted-braniac-backend.onrender.com" description="Backend server for a client's project. Project's deal was cut so it is mine now." />

@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <>
-        <html lang="en" className="box-border bg-overlay-bg">
+        <html lang="en" className="box-border bg-black-800">
         <body className="bg-black-800/[0.97] w-screen h-screen font-jetBrains overflow-hidden">
             <div id="root" className="h-full w-full">{children}</div>
         </body>
