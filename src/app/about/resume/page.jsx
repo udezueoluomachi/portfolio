@@ -10,7 +10,7 @@ const Resume = () => {
     <>
       <Header activePage="about"/>
       <div className="w-full h-5/6 flex justify-center items-center">
-        <a className="text-white hover:text-green text-sm font-base cursor-none md:cursor-pointer" href="https://drive.google.com/file/d/1F_3cWTK2jyhi9_ouGH-tgipr6btZ6PmR/view?usp=sharing" target="_blank">
+        <a className="text-white hover:text-green text-sm font-base cursor-none md:cursor-pointer" href="https://docs.google.com/document/d/16se0MJveUEAq3qGOybnXECtR9k0amp0JvT45wYGkT7o/edit?usp=sharing" target="_blank">
           VIEW RESUME
         </a>
       </div>
