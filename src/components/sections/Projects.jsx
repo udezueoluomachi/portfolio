@@ -9,7 +9,7 @@ export default function Projects() {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
-        <section className="py-32 container">
+        <section className="py-32 container mx-auto px-4 md:px-12">
             <h2 className="text-4xl md:text-6xl font-bold mb-20">SELECTED WORKS</h2>
 
             <div className="space-y-32">

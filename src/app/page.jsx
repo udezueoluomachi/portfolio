@@ -12,7 +12,7 @@ import Contact from '@/components/sections/Contact';
 import SoundControl from '@/components/ui/SoundControl';
 import TVOverlay from '@/components/ui/TVOverlay';
 import ParallaxBackground from '@/components/ui/ParallaxBackground';
-import RocketCursor from '@/components/ui/RocketCursor';
+import CustomCursor from '@/components/ui/CustomCursor';
 import VisualDecorations from '@/components/ui/VisualDecorations';
 
 export default function Home() {
@@ -26,10 +26,10 @@ export default function Home() {
 
             {!loading && (
                 <div className="relative z-10 w-full overflow-x-hidden">
+                    <CustomCursor />
                     <TVOverlay />
                     <VisualDecorations />
                     <ParallaxBackground />
-                    <RocketCursor />
                     <Hero />
                     <About />
                     <Skills />

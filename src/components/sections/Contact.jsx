@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Contact() {
     return (
-        <section className="py-32 container border-t border-white/10">
+        <section className="py-32 container mx-auto px-4 md:px-12 border-t border-white/10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                 <div>
                     <h2 className="text-4xl md:text-6xl font-bold mb-8">LET&apos;S BUILD<br />THE FUTURE</h2>

@@ -4,6 +4,7 @@ import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import styles from './Hero.module.scss';
+import HackerText from '@/components/ui/HackerText';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,9 +43,11 @@ export default function Hero() {
 
     return (
         <section className={styles.hero} ref={container}>
-            <div className="container h-full flex flex-col justify-center relative z-10">
+            <div className="container mx-auto px-4 md:px-12 h-full flex flex-col justify-center relative z-10">
                 <h1 className="text-6xl md:text-9xl font-bold tracking-tighter mb-4">
-                    OLUOMACHI<br />
+                    <HackerText text="OLUOMACHI" />
+                    <span className="text-orange-500 font-mono ml-4 text-4xl md:text-7xl align-top">{"{DREAM}"}</span>
+                    <br />
                     <span className="text-dim">UDEZUE</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-accent max-w-2xl">

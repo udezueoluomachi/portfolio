@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <html lang="en" className={jetbrainsMono.variable} suppressHydrationWarning>
             <body>
                 <SmoothScroll>
-                    <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black px-4 md:px-12">
+                    <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black">
                         {children}
                     </main>
                 </SmoothScroll>

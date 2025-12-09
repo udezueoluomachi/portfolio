@@ -30,7 +30,7 @@ export default function About() {
     const content = "I build high-impact, reliable systems that drive efficiency and growth. From AI-assisted platforms processing hundreds of proposals to marketplaces serving university communities, I architect solutions that matter.";
 
     return (
-        <section className="py-32 container">
+        <section className="py-32 container mx-auto px-4 md:px-12">
             <div className="max-w-4xl">
                 <p ref={textRef} className="text-3xl md:text-5xl leading-tight font-medium">
                     {content.split(' ').map((word, i) => (
