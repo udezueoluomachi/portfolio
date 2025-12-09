@@ -113,4 +113,41 @@
     50% {
         transform: translateY(-20px);
     }
+
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    .track {
+        padding-left: 5vw;
+    }
+
+    .section {
+        width: 100vw;
+        /* Full width sections on mobile */
+        padding: 0 1rem;
+    }
+
+    .introSection {
+        width: 100vw;
+    }
+
+    .panel {
+        width: 90vw;
+        /* Wide panels */
+        padding: 1.5rem;
+        transform: rotateY(5deg);
+        /* reduce rotation for readability */
+    }
+
+    .panelTitle {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .artifact {
+        font-size: 3rem;
+        /* Smaller artifacts */
+        top: 20%;
+    }
 }
