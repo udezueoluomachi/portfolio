@@ -42,7 +42,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className={styles.hero} ref={container}>
+        <section id="hero" className={styles.hero} ref={container}>
             <div className="container mx-auto px-4 md:px-12 h-full flex flex-col justify-center relative z-10">
                 <h1 className="text-6xl md:text-9xl font-bold tracking-tighter mb-4">
                     <HackerText text="OLUOMACHI" />

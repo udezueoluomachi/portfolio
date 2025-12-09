@@ -54,7 +54,7 @@ export default function Skills() {
     );
 
     return (
-        <section ref={wrapperRef} className={styles.skillsWrapper}>
+        <section id="skills" ref={wrapperRef} className={styles.skillsWrapper}>
             <div className={`${styles.stickyContainer} sticky-viewport`}>
                 <div ref={trackRef} className={styles.track}>
 

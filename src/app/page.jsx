@@ -14,6 +14,7 @@ import TVOverlay from '@/components/ui/TVOverlay';
 import ParallaxBackground from '@/components/ui/ParallaxBackground';
 import CustomCursor from '@/components/ui/CustomCursor';
 import VisualDecorations from '@/components/ui/VisualDecorations';
+import DockNav from '@/components/ui/DockNav';
 
 export default function Home() {
     const [loading, setLoading] = useState(true);
@@ -37,6 +38,7 @@ export default function Home() {
                     <Projects />
                     <Contact />
                     <SoundControl />
+                    <DockNav /> {/* Liquid Glass Navigation */}
                 </div>
             )}
         </>
