@@ -53,6 +53,9 @@ export default function Hero() {
                 <p className="text-xl md:text-2xl text-accent max-w-2xl">
                     FULL STACK SOFTWARE ENGINEER & AI RESEARCHER
                 </p>
+                <div className="mt-8 font-mono text-lg md:text-xl text-dim">
+                    I am currently building -&gt; <a href="https://unisynct.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400 transition-colors border-b border-white/20 hover:border-green-400 pb-1">unisynct.com</a>
+                </div>
             </div>
 
             {/* Floating Code Blocks */}
