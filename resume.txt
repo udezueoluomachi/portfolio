@@ -1,0 +1,120 @@
+OLUOMACHI C. UDEZUE (DREAM)
+Full Stack Software Engineer | AI Researcher | DevOps & Systems Architect
+dream-dev.vercel.app | basilchimaobi2@gmail.com | github.com/udezueoluomachi | linkedin.com/in/oluomachi-udezue-085240264 | x.com/udezueoluomachi
+Benin City, Nigeria (Open to Remote/Relocation)
+Dynamic technology specialist with over five years of hands-on experience architecting and deploying scalable software solutions across finance, education, agriculture, e-commerce, and media industries. Expertise in full-stack development using JavaScript, TypeScript, Python, Next.js, React, React Native, Node.js, Express.js, and Tailwind CSS. Proficient in AI/ML integration with transformer-based models, database optimization (MongoDB, MySQL, SQL), DevOps practices (Docker, AWS, Vercel, CI/CD), and system security. Proven track record of leading projects from ideation to production, including AI-assisted platforms processing hundreds of proposals and marketplaces serving university communities. Passionate about innovating high-impact, reliable systems that drive efficiency and growth for businesses and users.
+PROFESSIONAL EXPERIENCE
+
+Founder & Lead Engineer
+UniSyncT (unisynct.com) | Benin City, Nigeria			April 2024 – Present
+Founded and built a comprehensive campus marketplace platform enabling Nigerian university students, aspirants, and businesses to buy, sell, and connect seamlessly.
+Designed full-stack architecture using Next.js for frontend and backend, MongoDB/Mongoose for data management, and integrated payment gateways like Paystack for secure transactions.
+Implemented user authentication, real-time notifications, search optimization, and mobile-responsive UI/UX, resulting in early user adoption across multiple campuses.
+Launched on Product Hunt and actively iterated based on user feedback, incorporating features like category-based listings, chat functionality, and analytics dashboards.
+Managed deployment on Vercel and AWS, ensuring 99.9% uptime and scalability for growing user base; currently onboarding team members for expansion.
+Software Engineer
+Directorate of Research, Innovation and Development (DRID),
+University of Benin, Nigeria						March 2025 – July 2025
+
+Led the design and development of the TETFund IBR Grant Management Platform, a comprehensive grant lifecycle system handling proposal submission, AI-assisted scoring, human review, discrepancy detection, and award management for over 500 research proposals annually.
+Built intuitive user interfaces including proposal submission flows, reviewer dashboards, and administrator panels using Next.js, Node.js, Express.js, MongoDB, and Mongoose, improving processing efficiency by 40%.
+Developed an integrated AI scoring engine combining Python-based transformer ML models (e.g., BERT variants) with rule-based logic for automated initial grading, reducing manual review time by 50%.
+Implemented advanced features like blind review escalation, schema design for REST APIs, automated reviewer assignments, and performance analytics, ensuring compliance with institutional standards.
+Deployed the system on a VPS using Docker containers, PM2 for process management, and Cloudflare for DNS/security, achieving seamless integration and zero downtime during rollout.
+Collaborated on the Directorate’s public website and custom CMS, enabling staff to manage research news, blogs, events, and updates with secure upload/approval workflows.
+Optimized frontend with Next.js and Tailwind CSS for dynamic routing, rich content pages, mobile responsiveness, SEO, and fast image delivery, enhancing user engagement.
+
+Software Engineer
+Blockbytes | Remote							February 2024 - Present
+
+Software Development Leadership – Leading the development of all proprietary software, ensuring high-quality, scalable, and efficient solutions.
+Server & Infrastructure Management – Managing and maintaining company servers for high availability and reliability.
+Cloud & Deployment Management – Working with AWS, Vercel, and other cloud platforms for hosting, scaling, and deployment.
+Database Administration – Managing and optimizing MongoDB and other database solutions for performance and security.
+CI/CD Pipeline Management – Overseeing commit pipelines, automating deployments, and ensuring seamless software delivery.
+Code Quality & Best Practices – Writing clean, functional, and maintainable code using the latest technologies.
+Data Security & Compliance – Implementing robust security measures to protect sensitive data and maintain compliance.
+Research & Innovation – Conducting research on new technologies and best practices to continuously improve solutions.
+Monitoring & Reliability – Ensuring system stability, uptime, and proactive issue resolution.
+Collaboration & Coordination – Working with internal teams to align development with business objectives.
+
+Backend Engineer 
+Cocoon VC | Remote						May, 2023 - November, 2023
+Designed and optimized scalable APIs for two flagship products: a family finance app and a space booking platform, supporting thousands of daily requests with sub-100ms response times.
+Managed MongoDB databases using Mongoose, implementing efficient data schemas, indexing, and queries to handle complex financial and booking data.
+Developed backend infrastructure with Node.js and Express.js, including routing, middleware, authentication (JWT/OAuth), encryption, and role-based access controls.
+Documented and tested endpoints using Postman, ensuring 100% coverage and reliability in production environments.
+Handled deployment and DevOps pipelines on cloud platforms, automating updates and maintaining system integrity.
+
+
+ADDITIONAL EXPERIENCE
+
+Founder & Full Stack Engineer				January, 2023 - April, 2023
+Stackion (Independent Startup)
+Independently built a fintech app for offline peer-to-peer money transfers, using React Native for mobile, jQuery for landing page, and Node.js/Express.js for backend.
+Architected microservices across multiple servers for scalability, integrating KudaBank API for automated banking and MySQL/SQL for secure, encrypted data storage.
+Innovated a device-caching system for offline transactions akin to hardware e-wallets, researching encryption techniques to address security challenges (project paused for further vulnerability resolution).
+Managed full deployment lifecycle, ensuring smooth operations and exploring solutions for real-world viability in unreliable network environments.
+Full Stack Software Engineer / Designer (Freelance)			2020 - Present
+Various Clients | Remote
+Delivered over 50 custom web and mobile applications for clients in finance, agriculture, sales, arts, and blogging, using Next.js, React, React Native, Tailwind CSS, JavaScript, Node.js, Express.js, MongoDB, SQL, and MySQL.
+Integrated third-party APIs (e.g., payment gateways, notifications) and developed Telegram bots for automation, data scraping, and user interactions, boosting client efficiency by up to 30%.
+Optimized UI/UX for websites and dashboards, ensuring mobile responsiveness, SEO, and performance enhancements like lazy loading and caching.
+Built e-commerce platforms with secure payment processing, inventory management, and analytics, while providing consulting on technical needs and scalability.
+Deployed solutions on Vercel, AWS, and DigitalOcean, implementing data security best practices including encryption and compliance.
+Entrepreneurial Ventures & Grit						2018 – 2022
+Various Roles | Nigeria
+
+Bootstrapped and managed a fish farming operation with 2 ponds, generating revenue through local sales and supply chain management and learning operational resilience.
+Worked as a manual laborer in construction and agriculture to fund education, developing a strong work ethic, problem-solving, and entrepreneurial mindset that fueled self-taught coding journeys.
+
+EDUCATION
+
+ELEPE High School, Ikorodu Lagos Nigeria — WAEC
+SEPTEMBER  2018 - OCTOBER 2021
+I graduated from high school.
+
+University Of Benin, Benin, Edo,  Nigeria — BSC in Physics
+2024 - present
+Studying physics during the day, building softwares at night.
+
+TECHNICAL SKILLS
+
+Backend Development:
+Building and scaling APIs with Node.js, Express.js, and Python.
+Managing databases with MongoDB, Mongoose, MySQL, and SQL.
+Handling data encryption, user authentication, and security protocols.
+Designing and managing ORMs and database engines for efficient data handling.
+Frontend Development:
+Building web applications with Next.js, React, Tailwind CSS, and JavaScript.
+Designing mobile apps with React Native.
+Using jQuery for landing pages and UI enhancements.
+System Architecture & Scalability:
+Designing microservices architectures, ensuring high performance and modular APIs.
+Implementing caching techniques for offline transactions.
+Optimizing applications for handling large-scale user traffic.
+DevOps & Deployment:
+Deploying applications on AWS, Vercel, and DigitalOcean.
+Managing CI/CD pipelines, commit workflows, and automated deployments.
+Handling server management, reliability engineering, and system monitoring.
+Configuring and managing web servers like Nginx and Apache.
+Cloud Computing & Infrastructure:
+Working with AWS, DigitalOcean, and other cloud platforms for hosting and scaling applications.
+Managing serverless functions, load balancing, and resource optimization.
+Freelance & Custom Software Development:
+Building custom applications, bots, and backend solutions for clients.
+Developing Telegram bots and other automation tools.
+Enhancing, fixing, and scaling existing client software solutions.
+Providing web development, UI/UX design, and deployment services.
+Financial & Payment Systems:
+Integrating services like KudaBank API for automated banking transactions.
+Implementing secure payment processing and wallet management.
+Version Control & Collaboration:
+Using Git and GitHub for version control, team collaboration, and open-source contributions.
+
+LANGUAGE
+
+English (Fluent)
+Igbo (Native)
+Yoruba
+Spanish (Learning)

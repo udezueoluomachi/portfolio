@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syncopate:wght@400;700&display=swap');
+
+:root {
+  --color-bg: #050505;
+  --color-primary: #b026ff;
+  --color-secondary: #00f3ff;
+  --color-text: #ffffff;
+  --color-text-dim: #888888;
+  
+  --font-header: 'Syncopate', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  overflow: hidden; /* Handle scroll via custom smooth scroller or 3D world */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Utility classes */
+.font-header {
+  font-family: var(--font-header);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Canvas container */
+#canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: all; /* Allow 3D interaction */
+}
+
+/* UI Overlay */
+#ui-layer {
+  position: relative;
+  z-index: 10;
+  pointer-events: none; /* Let clicks pass through to canvas where needed */
+  width: 100%;
+  height: 100%;
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
