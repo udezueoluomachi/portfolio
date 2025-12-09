@@ -2,14 +2,16 @@
 
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import Loader from '@/components/ui/Loader';
 import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Skills from '@/components/sections/Skills';
 import Experience from '@/components/sections/Experience';
 import Projects from '@/components/sections/Projects';
 import Contact from '@/components/sections/Contact';
-import Loader from '@/components/ui/Loader';
 import SoundControl from '@/components/ui/SoundControl';
+import TVOverlay from '@/components/ui/TVOverlay';
+import ParallaxBackground from '@/components/ui/ParallaxBackground';
 
 export default function Home() {
     const [loading, setLoading] = useState(true);
@@ -21,7 +23,9 @@ export default function Home() {
             </AnimatePresence>
 
             {!loading && (
-                <div className="relative z-10">
+                <div className="relative z-10 w-full overflow-x-hidden">
+                    <TVOverlay />
+                    <ParallaxBackground />
                     <Hero />
                     <About />
                     <Skills />

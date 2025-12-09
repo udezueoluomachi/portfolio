@@ -8,21 +8,24 @@ class AudioManager {
     }
 
     init() {
+        if (this.bgm) return;
+
         // Background Music
         this.bgm = new Howl({
-            
             src: ['/Slugabed - Mountains Come Out of the Sky.mp3'],
             loop: true,
             volume: 0.5,
             html5: true, // Force HTML5 Audio to stream large files
+            autoplay: false,
         });
 
-        // SFX (Placeholders until files are added)
+        // SFX (Placeholders)
         // this.sfx.hover = new Howl({ src: ['/sfx/hover.mp3'], volume: 0.2 });
-        // this.sfx.click = new Howl({ src: ['/sfx/click.mp3'], volume: 0.4 });
     }
 
     playBGM() {
+        if (!this.bgm) this.init();
+
         if (this.bgm && !this.bgm.playing()) {
             this.bgm.play();
             this.bgm.fade(0, 0.5, 2000); // Fade in
