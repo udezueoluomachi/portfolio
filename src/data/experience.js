@@ -4,11 +4,12 @@ export const experience = [
         role: "Founder & Lead Engineer",
         period: "April 2024 – Present",
         location: "Benin City, Nigeria",
-        description: "Founded and built a comprehensive campus marketplace platform enabling Nigerian university students to buy, sell, and connect.",
+        description: "Founded and engineered a high-performance campus marketplace and social platform.",
         achievements: [
-            "Designed full-stack architecture using Next.js, MongoDB, and Paystack.",
-            "Implemented real-time notifications, search optimization, and mobile-responsive UI/UX.",
-            "Managed deployment on Vercel and AWS, ensuring 99.9% uptime."
+            "Architected full-stack ecosystem using Next.js 14, Node.js, and MongoDB.",
+            "Integrated AI-driven search and Real-time WebSocket messaging.",
+            "Built cross-platform support with React Native and PWA capabilities.",
+            "Orchestrated deployments on AWS with automated CI/CD pipelines."
         ]
     },
     {
@@ -16,44 +17,35 @@ export const experience = [
         role: "Software Engineer",
         period: "March 2025 – July 2025",
         location: "University of Benin",
-        description: "Led the design and development of the TETFund IBR Grant Management Platform.",
+        description: "Led the development of the TETFund IBR Grant Management System.",
         achievements: [
-            "Built proposal submission flows and AI-assisted scoring using Python transformer models.",
-            "Reduced manual review time by 50% through automated grading.",
-            "Deployed on VPS using Docker and Cloudflare."
+            "Implemented AI-assisted proposal scoring using Python transformers and OpenAI API.",
+            "Automated grant processing workflows, reducing manual review time by 50%.",
+            "Deployed secure infrastructure using Docker and Nginx on VPS."
         ]
     },
     {
         company: "Blockbytes",
-        role: "Software Engineer",
+        role: "Senior Systems Engineer",
         period: "February 2024 - Present",
         location: "Remote",
-        description: "Leading development of proprietary software and managing infrastructure.",
+        description: "Leading development of proprietary software, desktop apps, and infrastructure.",
         achievements: [
-            "Managing company servers and cloud deployment (AWS, Vercel).",
-            "Overseeing CI/CD pipelines and database administration."
+            "Developing high-frequency trading bots using Python and C++.",
+            "Building cross-platform desktop tools with Electron and Tauri.",
+            "Managing complex server infrastructure and database clusters."
         ]
     },
     {
-        company: "Cocoon VC",
-        role: "Backend Engineer",
-        period: "May 2023 - November 2023",
-        location: "Remote",
-        description: "Designed scalable APIs for family finance and space booking platforms.",
+        company: "Freelance / Open Source",
+        role: "Full Stack Engineer",
+        period: "2022 - Present",
+        location: "Global",
+        description: "Building specialized automation tools and bots for diverse clients.",
         achievements: [
-            "Optimized MongoDB schemas for sub-100ms response times.",
-            "Implemented JWT/OAuth authentication and role-based access controls."
-        ]
-    },
-    {
-        company: "Stackion",
-        role: "Founder & Full Stack Engineer",
-        period: "January 2023 - April 2023",
-        location: "Independent Startup",
-        description: "Built a fintech app for offline peer-to-peer money transfers.",
-        achievements: [
-            "Architected microservices integrating KudaBank API.",
-            "Innovated device-caching system for offline transactions."
+            "Developed advanced Telegram Bots for community management and crypto tracking.",
+            "Created custom web scrapers and automation scripts using Shell and Python.",
+            "Contributed to core PHP and JavaScript libraries."
         ]
     }
 ];

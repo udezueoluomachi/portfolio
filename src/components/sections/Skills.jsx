@@ -85,13 +85,19 @@ export default function Skills() {
                         <div className={styles.artifact} style={{ color: 'cyan' }}>432Hz</div>
                     </div>
 
-                    {/* ITEM 3: TOOLS */}
-                    <Panel title="DEVOPS" items={skills.devops} />
+                    {/* ITEM 3: AI & AUTOMATION (NEW) */}
+                    <Panel title="AI & AUTOMATION" items={skills.ai} />
 
-                    {/* END */}
-                    <div className={styles.section} style={{ width: '50vw' }}>
-                        <h2 className="text-6xl font-bold opacity-10">END OF LINE</h2>
+                    {/* ITEM 4: DEVOPS & TOOLS */}
+                    <Panel title="DEVOPS & CORE" items={skills.devops} />
+
+                    {/* END OF LINE - Centered */}
+                    <div className={styles.section} style={{ width: '60vw', justifyContent: 'center' }}>
+                        <h2 className="text-4xl md:text-6xl font-bold opacity-10 whitespace-nowrap">END OF LINE</h2>
                     </div>
+
+                    {/* SPACER: ensures we can scroll the final element to the center */}
+                    <div style={{ width: '50vw', flexShrink: 0 }}></div>
 
                 </div>
             </div>

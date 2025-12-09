@@ -42,8 +42,8 @@
 
 .section {
     position: relative;
-    width: 80vw;
-    /* Each section takes significant space */
+    width: 60vw;
+    /* Reduced from 80vw to close the gap */
     height: 100%;
     display: flex;
     align-items: center;

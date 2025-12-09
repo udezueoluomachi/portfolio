@@ -1,11 +1,14 @@
 export const skills = {
     backend: [
-        "Node.js", "Express.js", "Python", "MongoDB", "Mongoose", "MySQL", "SQL", "Docker", "AWS"
+        "Node.js", "Express", "PHP", "Java", "Python", "Go", "C++", "MySQL", "PostgreSQL", "MongoDB", "Redis", "Telegram API"
     ],
     frontend: [
-        "Next.js", "React", "React Native", "Tailwind CSS", "JavaScript", "TypeScript", "GSAP", "Framer Motion"
+        "React", "Next.js", "React Native", "TypeScript", "SCSS", "Tailwind", "Electron", "Tauri", "Three.js", "GSAP"
+    ],
+    ai: [
+        "Google Gemini API", "OpenAI API", "Anthropic API", "PyTorch", "TensorFlow", "OpenCV", "Transformers", "LLM Integration", "Automation Bots"
     ],
     devops: [
-        "CI/CD", "Vercel", "DigitalOcean", "Nginx", "Apache", "System Architecture"
+        "AWS", "DigitalOcean", "Docker", "Kubernetes", "CI/CD", "Nginx", "Apache", "Linux/Shell", "Gradle", "Git"
     ]
 };
