@@ -66,14 +66,16 @@ export default function Contact() {
                         </div>
 
                         {/* Resume Action */}
-                        <a href="https://docs.google.com/document/d/1YTbxdKV_5J52iWrysrXXNnovkE0KOvxmcO3ODcWyG5c/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="group relative overflow-hidden bg-white text-black p-6 flex flex-col gap-2 hover:bg-dim transition-colors">
-                            <div className="flex justify-between items-start">
-                                <FileText className="w-8 h-8" />
-                                <ArrowRight className="w-6 h-6 -rotate-45 group-hover:rotate-0 transition-transform" />
+                        <a href="https://docs.google.com/document/d/1YTbxdKV_5J52iWrysrXXNnovkE0KOvxmcO3ODcWyG5c/edit?usp=sharing" target="_blank" rel="noopener noreferrer"
+                            className="group relative overflow-hidden bg-white hover:bg-zinc-200 transition-colors p-6 flex flex-col gap-2"
+                            style={{ color: '#000000' }}>
+                            <div className="flex justify-between items-start" style={{ color: '#000000' }}>
+                                <FileText className="w-8 h-8" style={{ color: '#000000' }} />
+                                <ArrowRight className="w-6 h-6 -rotate-45 group-hover:rotate-0 transition-transform" style={{ color: '#000000' }} />
                             </div>
-                            <div>
-                                <h3 className="text-2xl font-bold">RESUME</h3>
-                                <p className="font-mono text-xs opacity-60">ACCESS_FULL_DOSSIER</p>
+                            <div style={{ color: '#000000' }}>
+                                <h3 className="text-2xl font-bold" style={{ color: '#000000' }}>RESUME</h3>
+                                <p className="font-mono text-xs opacity-60" style={{ color: '#000000' }}>ACCESS_FULL_DOSSIER</p>
                             </div>
                         </a>
 
