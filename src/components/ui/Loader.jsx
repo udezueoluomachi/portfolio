@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './Loader.module.scss';
+import audioManager from '@/managers/AudioManager';
 
 const words = ["INITIALIZING...", "LOADING ASSETS...", "DECRYPTING PROFILE...", "ACCESS GRANTED"];
 
@@ -11,7 +12,16 @@ export default function Loader({ onComplete }) {
 
     useEffect(() => {
         if (index === words.length - 1) {
-            setTimeout(onComplete, 1000);
+            setTimeout(() => {
+                // Attempt autoplay
+                try {
+                    audioManager.init();
+                    audioManager.playBGM();
+                } catch (e) {
+                    console.log("Audio autoplay blocked by browser policy");
+                }
+                onComplete();
+            }, 1000);
             return;
         }
 
