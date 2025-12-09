@@ -5,17 +5,6 @@ import { motion } from 'framer-motion';
 export default function VisualDecorations() {
     return (
         <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-            {/* Subtle Grid Floor */}
-            <div className="absolute inset-0 opacity-[0.03]"
-                style={{
-                    backgroundImage: `linear-gradient(to right, #888 1px, transparent 1px),
-                                   linear-gradient(to bottom, #888 1px, transparent 1px)`,
-                    backgroundSize: '40px 40px',
-                    perspective: '1000px',
-                    transform: 'rotateX(20deg) scale(1.2)'
-                }}
-            />
-
             {/* Floating Data Hex Strings */}
             <motion.div
                 className="absolute top-1/4 right-10 text-[10px] font-mono text-dim/20"
