@@ -9,25 +9,27 @@ import HackerText from '../ui/HackerText';
 
 export default function Skills() {
     const wrapperRef = useRef(null);
-    const worldRef = useRef(null);
+    const trackRef = useRef(null);
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            // Horizontal Scroll Effect (Sideways Pan)
-            // We move the world on the X axis
 
-            const totalWidth = 4000; // How long the hallway is horizontally
+            // Standard Horizontal Scroll
+            // Move the track to the left as we scroll down
 
-            gsap.to(worldRef.current, {
-                x: -totalWidth,
+            const track = trackRef.current;
+            const scrollWidth = track.scrollWidth - window.innerWidth;
+
+            gsap.to(track, {
+                x: -scrollWidth,
                 ease: "none",
                 scrollTrigger: {
                     trigger: wrapperRef.current,
                     start: "top top",
                     end: "bottom bottom",
                     scrub: 1,
-                    // We rely on the wrapper's height for scroll space, 
-                    // and use CSS sticky/fixed in the child to keep it in view.
+                    // Pin the viewport container
+                    pin: ".sticky-viewport"
                 }
             });
 
@@ -36,109 +38,61 @@ export default function Skills() {
         return () => ctx.revert();
     }, []);
 
-    const Panel = ({ title, items, x, z = 0, rotationY = 0 }) => (
-        <div
-            className={styles.panel}
-            style={{
-                transform: `translate3d(${x}px, -50%, ${z}px) rotateY(${rotationY}deg)`
-            }}
-        >
-            <h3 className={styles.panelTitle}>{title}</h3>
-            <ul className="space-y-2 font-mono text-sm leading-relaxed text-dim">
-                {items.map(item => (
-                    <li key={item} className="hover:text-white transition-colors cursor-crosshair">
-                        &gt; {item}
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
-
-    const Artifact = ({ content, x, z = 0, rotationY = 0, color = "#fff" }) => (
-        <div
-            className={styles.artifact}
-            style={{
-                transform: `translate3d(${x}px, -50%, ${z}px) rotateY(${rotationY}deg)`,
-                borderColor: color,
-                color: color
-            }}
-        >
-            {content}
+    const Panel = ({ title, items, rotationY = 15 }) => (
+        <div className={styles.section}>
+            <div className={styles.panel}>
+                <h3 className={styles.panelTitle}>{title}</h3>
+                <ul className="space-y-4 font-mono text-lg text-dim">
+                    {items.map(item => (
+                        <li key={item} className="hover:text-white transition-colors cursor-crosshair">
+                            &gt; {item}
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 
     return (
         <section ref={wrapperRef} className={styles.skillsWrapper}>
-            <div className={styles.stickyContainer}>
-                <div className="perspective-viewport w-full h-full relative" style={{ perspective: '1000px' }}>
-                    <div ref={worldRef} className={styles.world} style={{ transform: 'translate3d(0,0,0)' }}>
+            <div className={`${styles.stickyContainer} sticky-viewport`}>
+                <div ref={trackRef} className={styles.track}>
 
-                        {/* The Floor Path */}
-                        <div className={styles.floor}>
-                            {/* Dashed Path Visualization */}
-                            <div className="absolute top-1/2 left-0 w-[5000px] h-1 border-t-2 border-dashed border-white/20 transform -translate-y-1/2"></div>
-                        </div>
+                    {/* The Floor Line (Moves with the track) */}
+                    <div className={styles.floor}></div>
 
-                        {/* Entrance Text */}
-                        <div className={styles.introText} style={{ transform: 'translate3d(50vw, -50%, 0)' }}>
-                            <h2 className="text-6xl md:text-8xl font-bold tracking-tighter mix-blend-difference">
-                                <HackerText text="ARSENAL" />
-                            </h2>
-                            <p className="font-mono text-dim mt-4">SECURE SERVER HALLWAY</p>
-                        </div>
-
-                        {/* SCENE 1: Frontend (Left) */}
-                        <Panel
-                            title="FRONTEND"
-                            items={skills.frontend}
-                            x={1500}
-                            z={-200}
-                            rotationY={15}
-                        />
-
-                        {/* SCENE 2: Backend (Right) */}
-                        <Panel
-                            title="BACKEND"
-                            items={skills.backend}
-                            x={2500}
-                            z={-200}
-                            rotationY={-15}
-                        />
-
-                        {/* SCENE 3: Tools (Center/End) */}
-                        <Panel
-                            title="DEVOPS & TOOLS"
-                            items={skills.devops}
-                            x={3500}
-                            z={0}
-                            rotationY={0}
-                        />
-
-                        {/* Artifacts */}
-                        <Artifact
-                            content="φ"
-                            x={2000}
-                            z={-600}
-                            rotationY={45}
-                            color="rgba(255, 255, 0, 0.5)"
-                        />
-
-                        <Artifact
-                            content="432Hz"
-                            x={3000}
-                            z={-400}
-                            rotationY={-25}
-                            color="rgba(0, 255, 255, 0.5)"
-                        />
-
-                        <div
-                            className="absolute font-bold text-[100px] opacity-10 pointer-events-none whitespace-nowrap"
-                            style={{ transform: 'translate3d(4500px, -50%, -500px)' }}
-                        >
-                            END OF LINE
-                        </div>
-
+                    {/* INTRO */}
+                    <div className={`${styles.section} ${styles.introSection}`}>
+                        <h2 className="text-8xl md:text-9xl font-bold tracking-tighter mix-blend-difference mb-4">
+                            <HackerText text="ARSENAL" />
+                        </h2>
+                        <p className="font-mono text-dim text-xl">SCROLL TO ACCESS MODULES &gt;&gt;</p>
                     </div>
+
+                    {/* ITEM 1: FRONTEND */}
+                    <Panel title="FRONTEND" items={skills.frontend} />
+
+                    {/* Artifact 1 */}
+                    <div className={styles.section} style={{ width: '40vw' }}>
+                        <div className={styles.artifact} style={{ color: 'yellow' }}>φ</div>
+                    </div>
+
+                    {/* ITEM 2: BACKEND */}
+                    <Panel title="BACKEND" items={skills.backend} />
+
+                    {/* Artifact 2 */}
+                    <div className={styles.section} style={{ width: '40vw' }}>
+                        <div className={styles.artifact} style={{ color: 'cyan' }}>432Hz</div>
+                    </div>
+
+                    {/* ITEM 3: TOOLS */}
+                    <Panel title="DEVOPS" items={skills.devops} />
+
+                    {/* END */}
+                    <div className={styles.section} style={{ width: '50vw' }}>
+                        <h2 className="text-6xl font-bold opacity-10">END OF LINE</h2>
+                    </div>
+
                 </div>
             </div>
         </section>

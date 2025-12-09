@@ -1,6 +1,6 @@
 .skillsWrapper {
-    height: 400vh;
-    /* Long scroll area */
+    height: 500vh;
+    /* Deep scroll space */
     position: relative;
     z-index: 20;
     background: #000;
@@ -12,90 +12,105 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    perspective: 1000px;
+    /* Kept for 3D child effects */
 }
 
-/* We actually need the viewport to be sticky or fixed inside the section */
-
-.world {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.track {
+    display: flex;
+    align-items: center;
     height: 100%;
-    transform-style: preserve-3d;
+    width: max-content;
+    /* Auto-width based on children */
     will-change: transform;
+    padding-left: 10vw;
+    /* Initial offset */
 }
 
+/* Floor moves with the track or stays? 
+   Let's make it part of the track for the "moving" sensation */
 .floor {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 0;
-    width: 5000px;
-    height: 200vh;
-    transform: translateY(20%) rotateX(80deg);
-    /* Flat floor effect */
-    background:
-        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-        linear-gradient(0deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-    background-size: 100px 100px;
-    mask-image: linear-gradient(to top, black, transparent);
-    pointer-events: none;
+    width: 100%;
+    /* Will span the whole track */
+    height: 1px;
+    border-top: 2px dashed rgba(255, 255, 255, 0.1);
+    z-index: 0;
 }
 
-.wallContainer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-style: preserve-3d;
+.section {
+    position: relative;
+    width: 80vw;
+    /* Each section takes significant space */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    perspective: 1000px;
+}
+
+.introSection {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .panel {
-    position: absolute;
-    top: 50%;
-    left: 0;
+    position: relative;
     width: 400px;
+    padding: 3rem;
     background: rgba(10, 10, 10, 0.9);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    transform-style: preserve-3d;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    transform: rotateY(15deg);
+    /* Static 3D look */
+    box-shadow: 20px 0 50px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.panel:hover {
+    transform: rotateY(0deg) scale(1.05);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .panelTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
     color: #fff;
     border-bottom: 1px solid #333;
     padding-bottom: 1rem;
     text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-/* Secrets / NFTs */
 .artifact {
     position: absolute;
-    top: 50%;
-    left: 0;
-    width: 300px;
-    height: 300px;
-    border: 1px dashed rgba(255, 100, 100, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 30%;
+    font-size: 6rem;
     font-family: monospace;
-    font-size: 4rem;
-    background: rgba(0, 0, 0, 0.5);
-    transform-style: preserve-3d;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 1;
+    animation: float 6s ease-in-out infinite;
 }
 
-.introText {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    text-align: center;
-    width: 600px;
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
