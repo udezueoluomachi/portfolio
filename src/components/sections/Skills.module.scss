@@ -1,0 +1,153 @@
+.skillsWrapper {
+    height: 500vh;
+    /* Deep scroll space */
+    position: relative;
+    z-index: 20;
+    background: #000;
+}
+
+.stickyContainer {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    perspective: 1000px;
+    /* Kept for 3D child effects */
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: max-content;
+    /* Auto-width based on children */
+    will-change: transform;
+    padding-left: 10vw;
+    /* Initial offset */
+}
+
+/* Floor moves with the track or stays? 
+   Let's make it part of the track for the "moving" sensation */
+.floor {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    /* Will span the whole track */
+    height: 1px;
+    border-top: 2px dashed rgba(255, 255, 255, 0.1);
+    z-index: 0;
+}
+
+.section {
+    position: relative;
+    width: 60vw;
+    /* Reduced from 80vw to close the gap */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    perspective: 1000px;
+}
+
+.introSection {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.panel {
+    position: relative;
+    width: 400px;
+    padding: 3rem;
+    background: rgba(10, 10, 10, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    transform: rotateY(15deg);
+    /* Static 3D look */
+    box-shadow: 20px 0 50px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.panel:hover {
+    transform: rotateY(0deg) scale(1.05);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.panelTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #fff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.artifact {
+    position: absolute;
+    top: 30%;
+    font-size: 6rem;
+    font-family: monospace;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 1;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    .track {
+        padding-left: 5vw;
+    }
+
+    .section {
+        width: 100vw;
+        /* Full width sections on mobile */
+        padding: 0 1rem;
+    }
+
+    .introSection {
+        width: 100vw;
+    }
+
+    .panel {
+        width: 90vw;
+        /* Wide panels */
+        padding: 1.5rem;
+        transform: rotateY(5deg);
+        /* reduce rotation for readability */
+    }
+
+    .panelTitle {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .artifact {
+        font-size: 3rem;
+        /* Smaller artifacts */
+        top: 20%;
+    }
+}

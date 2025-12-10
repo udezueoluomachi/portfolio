@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @responsive {
+    .stroke-text {
+      -webkit-text-stroke-color: #fff;
+      -webkit-text-stroke-width: 0.2px;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("../assets/fonts/jetbrains-mono/ttf/JetBrainsMono-Regular.ttf");
+}
+* {
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
