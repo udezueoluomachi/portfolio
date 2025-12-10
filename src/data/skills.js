@@ -1,6 +1,6 @@
 export const skills = {
     backend: [
-        "Node.js", "Express", "PHP", "Java", "Python", "Go", "C++", "MySQL", "PostgreSQL", "MongoDB", "Redis", "Telegram API"
+        "Node.js", "Express", "PHP", "Java", "Python", "Go", "C++", "MySQL", "PostgreSQL", "MongoDB", "Redis", "Telegram API", "Firebase", "Fintech APIs"
     ],
     frontend: [
         "React", "Next.js", "React Native", "TypeScript", "SCSS", "Tailwind", "Electron", "Tauri", "Three.js", "GSAP"

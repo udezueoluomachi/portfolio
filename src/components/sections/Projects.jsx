@@ -69,14 +69,14 @@ export default function Projects() {
                             >
                                 <div className="flex items-center gap-2 text-white bg-black/50 px-4 py-2 rounded-full border border-white/20">
                                     <ZoomIn size={20} />
-                                    <span className="font-mono text-sm">VIEW PROJECT</span>
+                                    <span className="font-mono text-sm">VIEW</span>
                                 </div>
                             </motion.div>
 
                             <motion.img
                                 src={project.image}
                                 alt={project.title}
-                                className="object-cover w-full h-full opacity-60 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0"
+                                className="object-center w-full h-full opacity-60 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0"
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ duration: 0.5 }}
                             />
