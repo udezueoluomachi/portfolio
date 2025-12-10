@@ -46,9 +46,13 @@ export default function Hero() {
             <div className="container mx-auto px-4 md:px-12 h-full flex flex-col justify-center relative z-10">
                 <h1 className="text-6xl md:text-9xl font-bold tracking-tighter mb-4">
                     <HackerText text="OLUOMACHI" />
-                    <span className="text-orange-500 font-mono ml-4 text-4xl md:text-7xl align-top">{"{DREAM}"}</span>
                     <br />
                     <span className="text-dim">UDEZUE</span>
+                    <span className="font-mono ml-4 text-4xl md:text-7xl align-top">
+                        <span className="text-yellow-500">{"{"}</span>
+                        <span style={{ color: '#F97316' }}>DREAM</span>
+                        <span className="text-yellow-500">{"}"}</span>
+                    </span>
                 </h1>
                 <p className="text-xl md:text-2xl text-accent max-w-2xl">
                     FULL STACK SOFTWARE ENGINEER & AI RESEARCHER
