@@ -19,7 +19,7 @@ export const projects = [
         title: "UniSyncT Mobile",
         description: "Official React Native app for UniSyncT — swipe to connect, buy/sell safely with escrow, chat, and stay updated on campus trends. Optimized for Gen Z with smooth interface.",
         image: "/images/unisynct-mobile.png",
-        repo: "https://github.com/udezueoluomachi/unisynct-mobile",
+        repo: "https://github.com/unisynct",
         demo: "https://play.google.com/store/apps/details?id=ng.unisynct.app",
         tech: ["React Native", "Mobile", "Fintech", "Social"]
     },
@@ -69,6 +69,6 @@ export const projects = [
         image: "/images/stackion.jpeg",
         repo: "https://drive.google.com/file/d/1zYq4J6zYs3CFhB8JUcs1ru_HgDapZ-Hq/view?usp=sharing",
         demo: "https://youtu.be/hOnJ6fwJmfY?si=7Rkl9OTm_DKiRmSL",
-        tech: ["React Native", "Fintech", "Offline-First"]
+        tech: ["React Native", "Fintech", "Offline-First", "Not Live"]
     }
 ];
