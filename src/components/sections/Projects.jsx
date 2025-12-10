@@ -3,10 +3,12 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { projects } from '@/data/projects';
-import { ArrowUpRight, Github } from 'lucide-react';
+import { ArrowUpRight, Github, ZoomIn } from 'lucide-react';
+import ImageViewer from '../ui/ImageViewer';
 
 export default function Projects() {
     const [hoveredIndex, setHoveredIndex] = useState(null);
+    const [selectedImage, setSelectedImage] = useState(null);
 
     return (
         <section id="projects" className="py-32 container mx-auto px-4 md:px-12">
@@ -58,11 +60,23 @@ export default function Projects() {
                         </div>
 
                         {/* Project Image (Parallax/Reveal Effect) */}
-                        <div className="lg:col-span-7 order-1 lg:order-2 relative overflow-hidden aspect-video bg-white/5">
+                        <div
+                            className="lg:col-span-7 order-1 lg:order-2 relative overflow-hidden aspect-video bg-white/5 cursor-zoom-in"
+                            onClick={() => setSelectedImage({ src: project.image, alt: project.title })}
+                        >
+                            <motion.div
+                                className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-center justify-center backdrop-blur-[2px]"
+                            >
+                                <div className="flex items-center gap-2 text-white bg-black/50 px-4 py-2 rounded-full border border-white/20">
+                                    <ZoomIn size={20} />
+                                    <span className="font-mono text-sm">VIEW</span>
+                                </div>
+                            </motion.div>
+
                             <motion.img
                                 src={project.image}
                                 alt={project.title}
-                                className="object-cover w-full h-full opacity-60 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0"
+                                className="object-center w-full h-full opacity-60 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0"
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ duration: 0.5 }}
                             />
@@ -70,6 +84,14 @@ export default function Projects() {
                     </div>
                 ))}
             </div>
+
+            {/* Lightbox */}
+            <ImageViewer
+                isOpen={!!selectedImage}
+                onClose={() => setSelectedImage(null)}
+                src={selectedImage?.src}
+                alt={selectedImage?.alt}
+            />
         </section>
     );
 }

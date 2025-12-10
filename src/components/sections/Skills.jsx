@@ -93,7 +93,7 @@ export default function Skills() {
 
                     {/* END OF LINE - Centered */}
                     <div className={styles.section} style={{ width: '60vw', justifyContent: 'center' }}>
-                        <h2 className="text-4xl md:text-6xl font-bold opacity-10 whitespace-nowrap">END OF LINE</h2>
+                        <h2 className="text-4xl md:text-6xl font-bold opacity-10 whitespace-nowrap">END OF LINE <span className="text-dim">//I adapt fast</span></h2>
                     </div>
 
                     {/* SPACER: ensures we can scroll the final element to the center */}
